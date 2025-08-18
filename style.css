@@ -152,6 +152,7 @@ body{
 .section3-boxes .num5{
   background: url(./images/L5.jpg) center center /cover;
 }
+.section3-boxes p{
   font-size: 0.6rem;
   padding: 10px 2px 0;
 }
