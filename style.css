@@ -17,6 +17,9 @@ body{
   padding: 10px 50px;
   color: #242424;
 }
+.header-content .bars{
+  display: none;
+}
 .header-content .left{
   display: flex;
   align-items: center;
@@ -90,12 +93,12 @@ body{
   cursor: pointer;
 }
 /* section2 */
-.section2, .section3, .section4, .section5{
+.section2, .section3, .section4, .section5, .section6{
   background-color: #fff;
   padding: 20px;
   margin: 0;
 }
-.section2 .text, .section3 .text{
+.section2 .text, .section3 .text, .section6 .text{
   padding: 20px 20px;
   margin-bottom: 50px;
   font-size: 1.1rem;
@@ -181,15 +184,184 @@ body{
 
 .section5{
   text-align: center;
-  height: 400px;
+  height: 100%;
   font-size: 1.1rem;
+  background: rgb(227, 225, 225);
 }
 .section5 .text{
-  background: rgb(227, 225, 225);
   margin: 10px;
   padding: 100px;
 }
+.section5 h4{
+  font-size: 1.4rem;
+}
 .section5 p{
-  margin: 50px;
+  margin: 50px 150px;
   font-size: 1rem;
+}
+
+.section6 .text{
+  text-align: center;
+}
+.section6 .images{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section6 .images .im{
+  width: 250px;
+  height: 250px;
+}
+.section6 .images .img1{
+  background: url(./images/charlesdeluvio-1-nx1QR5dTE-unsplash.jpg) center center /cover;
+}
+.section6 .img2{
+  background: url(./images/claudio-schwarz-D3n859qG03U-unsplash.jpg) center center /cover;
+}
+.section6 .img3{
+  background: url(./images/claudio-schwarz-e8TtkC5xyv4-unsplash.jpg) center center /cover;
+}
+.section6 .img4{
+  background: url(./images/diana-light-nvQemFKRBUo-unsplash.jpg) center center /cover;
+}
+.section6 .img5{
+  background: url(./images/giorgio-trovato-K62u25Jk6vo-unsplash.jpg) center center /cover;
+}
+
+.section7{
+  background-color: rgb(227, 225, 225);
+  padding: 100px 30px 20px;
+}
+.section7 .upper{
+   display: flex;
+   justify-content: space-between;
+}
+.section7 .left{
+  display: flex;
+  justify-content: space-between;
+}
+.section7 .left .ccc{
+  margin: 0 20px;
+  font-weight: bold;
+}
+.section7 .left h5{
+  font-size: 0.8rem;
+  color: rgb(99, 99, 99);
+  margin: 10px 0 25px;
+}
+.section7 .left p{
+  font-size: 0.8rem;
+  color: rgb(65, 65, 65);
+  padding: 3px 0;
+}
+.section7 .right{
+  width: 450px;
+  font-weight: bold;
+}
+.section7 .right h4{
+  color: rgb(14, 14, 14);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.section7 .right input{
+  padding: 15px 10px;
+  font-size: 0.8rem;
+  width: 90%;
+  background-color: transparent;
+  border: 1.5px solid rgb(99, 99, 99);
+}
+.section7 .right p{
+  font-size: 0.8rem;
+  padding: 5px 0;
+  color: #242424;
+}
+.section7 .right button{
+  padding: 12px 25px;
+  margin: 15px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+}
+.section7 .bottom h2{
+  font-size: 1.1rem;
+  padding: 80px 0 20px;
+  color: rgb(99, 99, 99);
+}
+
+@media screen and (max-width: 896px) {
+  .container .header-content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-content .bars{
+    display: block;
+  }
+  .container .header-content .left{
+    display: block;
+  }
+  .header-content .left nav{
+    display: none;
+  }
+  .header-content .left h1{
+    justify-content: center;
+    margin: 0 0 0 50px;
+  }
+
+  .section1{
+    position: relative;
+  }
+  .section1 .text1{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .section1 .text1 h4{
+    color: #fff;
+  }
+
+  .section2 .text, .section3 .text, .section6 .text{
+    padding: 20px 10px 10px;
+  }
+  .section2-images, .section4-images{
+    display: block;
+    margin-left: 20%;
+    text-align: center;
+  }
+  .section2-images .images{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  .section3-boxes{
+    overflow: scroll;
+  }
+  .section3-boxes .images{
+    margin: 10px;
+  }
+  .section4-images .img{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  .section5 .text{
+    padding: 40px 24px;
+  }
+  .section5 p{
+    margin: 50px 0;
+    font-size: 1rem;
+  }
+  .section6 .img3, .section6 .img4, .section6 .img5{
+    display: none;
+  }
+  .section7 .upper{
+    display: block;
+  }
+  .section7 .left{
+    display: block;
+  }
+  .section7 .left .ccc{
+    margin: 10px 10px 50px;
+  }
 }
