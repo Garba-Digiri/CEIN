@@ -293,6 +293,9 @@ body{
 }
 
 @media screen and (max-width: 896px) {
+  *{
+    overflow-x: hidden;
+  }
   .container .header-content{
     display: flex;
     justify-content: space-between;
