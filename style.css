@@ -352,7 +352,7 @@ body{
   }
   .section2-images .images, .section4-images .img{
     height: 350px;
-    width: 350px;
+    width: 90%;
     margin-bottom: 15px;
   }
   .section3-boxes{
@@ -397,6 +397,6 @@ body{
     margin-bottom: 20px;
   }
   .section7 .right input, .section7 .right p{
-    width: 75%;
+    width: 70%;
   }
 }
