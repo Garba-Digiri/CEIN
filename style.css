@@ -315,6 +315,9 @@ body{
     justify-content: center;
     margin: 0 0 0 50px;
   }
+  .header-content .right{
+    margin-right: 10px;
+  }
   .header-content .right .hide{
     display: none;
   }
