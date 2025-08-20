@@ -290,15 +290,22 @@ body{
 }
 
 @media screen and (max-width: 896px) {
+  body{
+    overflow-x: hidden;
+  }
   .container .header-content{
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    font-size: 1.2rem;
   }
   .header-content .bars{
     display: block;
+    margin-left: 20px;
   }
   .container .header-content .left{
     display: block;
+    position: relative;
   }
   .header-content .left nav{
     display: none;
@@ -307,6 +314,17 @@ body{
     justify-content: center;
     margin: 0 0 0 50px;
   }
+  .header-content .right .hide{
+    display: none;
+  }
+  .right i{
+  margin: 0 5px;
+  padding-right: 5px;
+  font-size: 0.7rem;
+}
+.right .fa-magnifying-glass{
+  margin-right: 0;
+}
 
   .section1{
     position: relative;
@@ -319,19 +337,22 @@ body{
   }
   .section1 .text1 h4{
     color: #fff;
+    font-size: 1.6rem;
+    margin-right: 100px;
   }
 
   .section2 .text, .section3 .text, .section6 .text{
     padding: 20px 10px 10px;
+    font-size: 1.4rem;
   }
   .section2-images, .section4-images{
     display: block;
-    margin-left: 20%;
+    margin-left: 10px;
     text-align: center;
   }
-  .section2-images .images{
-    height: 300px;
-    width: 300px;
+  .section2-images .images, .section4-images .img{
+    height: 350px;
+    width: 350px;
     margin-bottom: 15px;
   }
   .section3-boxes{
@@ -339,12 +360,10 @@ body{
   }
   .section3-boxes .images{
     margin: 10px;
+    height: 200px;
+    width: 200px;
   }
-  .section4-images .img{
-    height: 300px;
-    width: 300px;
-    margin-bottom: 15px;
-  }
+
   .section5 .text{
     padding: 40px 24px;
   }
@@ -352,7 +371,12 @@ body{
     margin: 50px 0;
     font-size: 1rem;
   }
-  .section6 .img3, .section6 .img4, .section6 .img5{
+  .section6 .images .im{
+    width: 200px;
+    height: 120px;
+    margin: 3px;
+  }
+  .section6 .img4, .section6 .img5{
     display: none;
   }
   .section7 .upper{
@@ -363,5 +387,16 @@ body{
   }
   .section7 .left .ccc{
     margin: 10px 10px 50px;
+  }
+  
+  .section7 .left h5, .section7 .left p{
+    font-size: 0.8rem;
+    margin: 10px;
+  }
+  .section7 .left h5{
+    margin-bottom: 20px;
+  }
+  .section7 .right input, .section7 .right p{
+    width: 75%;
   }
 }
