@@ -8,7 +8,6 @@ body{
   box-sizing: border-box;
   background-color: grey;
   letter-spacing: 0.1rem;
-  overflow-x: hidden;
 }
 .container .header-content{
   display: flex;
@@ -293,9 +292,6 @@ body{
 }
 
 @media screen and (max-width: 896px) {
-  *{
-    overflow-x: hidden;
-  }
   .container .header-content{
     display: flex;
     justify-content: space-between;
@@ -387,6 +383,9 @@ body{
   .section6 .img4, .section6 .img5{
     display: none;
   }
+  .section7{
+    overflow-x: hidden;
+  }
   .section7 .upper{
     display: block;
   }
@@ -405,6 +404,6 @@ body{
     margin-bottom: 20px;
   }
   .section7 .right input, .section7 .right p{
-    width: 70%;
+    width: 65%;
   }
 }
