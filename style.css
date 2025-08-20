@@ -8,6 +8,7 @@ body{
   box-sizing: border-box;
   background-color: grey;
   letter-spacing: 0.1rem;
+  overflow-x: hidden;
 }
 .container .header-content{
   display: flex;
@@ -134,7 +135,9 @@ body{
   font-size: 1.1rem;
   font-weight: 300;
 }
-
+.section3-boxes{
+    overflow-x: scroll;
+  }
 .section3-boxes .images{
   height: 280px;
   width: 245px;
@@ -290,9 +293,6 @@ body{
 }
 
 @media screen and (max-width: 896px) {
-  body{
-    overflow-x: hidden;
-  }
   .container .header-content{
     display: flex;
     justify-content: space-between;
@@ -354,14 +354,15 @@ body{
     margin-left: 10px;
     text-align: center;
   }
-  .section2-images .images, .section4-images .img{
+  .section2-images .images{
     height: 350px;
-    width: 90%;
+    width: 94%;
     margin-bottom: 15px;
   }
-  .section3-boxes{
-    overflow: scroll;
-  }
+  .section4-images .img{
+    height: 350px;
+    width: 100%;
+    margin-bottom: 15px;}
   .section3-boxes .images{
     margin: 10px;
     height: 200px;
