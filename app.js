@@ -8,4 +8,16 @@ bars.addEventListener('click', ()=> {
 
 close.addEventListener('click', ()=> {
   navbar.classList.remove('open');
+});
+
+const displayPop = document.getElementById('display-pop');
+const closePop = document.getElementById('close-pop');
+const containerPop = document.querySelector('.container-pop')
+
+displayPop.addEventListener('click', ()=>{
+  containerPop.style.display = "flex";
+});
+
+closePop.addEventListener('click', ()=>{
+  containerPop.style.display = "none";
 })
