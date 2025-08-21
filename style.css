@@ -9,6 +9,9 @@ body{
   background-color: grey;
   letter-spacing: 0.1rem;
 }
+.container{
+  position: relative;
+}
 .container .header-content{
   display: flex;
   justify-content: space-between;
@@ -23,6 +26,9 @@ body{
 .header-content .left{
   display: flex;
   align-items: center;
+}
+.left nav .fa-x{
+  display: none;
 }
 .left nav{
   margin: 0 20px;
@@ -291,6 +297,63 @@ body{
   color: rgb(99, 99, 99);
 }
 
+.container-pop{
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin: 15vh 20vh;
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff; */
+    display: none;
+}
+
+.container-pop .left{
+    background: url(./images/con-pop.jpg) center center /cover;
+    height: 70vh;
+    width: 60vh;
+}
+.container-pop .right{
+    background-color: #fff;
+    width: 60vh;
+    padding: 40px 10px 0;
+    
+}
+.container-pop .right p{
+    margin: 20px;
+    font-size: 1.1rem;
+}
+.container-pop .right h1{
+    margin: 20px;
+    font-size: 2rem;
+}
+.container-pop .right .form input{
+    width: 70%;
+    padding: 5px;
+    font-size: 0.8rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.container-pop .right .form input:focus{
+    outline: none;
+}
+.container-pop .right .form button{
+    padding: 7px 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+.container-pop .right .form button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
 @media screen and (max-width: 896px) {
   .container .header-content{
     display: flex;
@@ -298,6 +361,8 @@ body{
     padding: 0;
     font-size: 1.2rem;
     padding: 10px 0;
+    margin: 0;
+    position: relative;
   }
   .header-content .bars{
     display: block;
@@ -305,10 +370,33 @@ body{
   }
   .container .header-content .left{
     display: block;
-    position: relative;
   }
   .header-content .left nav{
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding: 30px 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .header-content .left nav.open{
+    transform: translateX(0);
+  }
+  .left nav .fa-x{
+  display: flex;
+  margin-left: 90%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+  .header-content .left nav ul li{
+    display: block;
+    padding: 20px 10px 20px 10px;
   }
   .header-content .left h1{
     justify-content: center;
