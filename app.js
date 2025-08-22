@@ -20,4 +20,11 @@ displayPop.addEventListener('click', ()=>{
 
 closePop.addEventListener('click', ()=>{
   containerPop.style.display = "none";
+});
+
+const shop = document.getElementById('shop');
+const dropdown = document.querySelector('.dropdown');
+
+shop.addEventListener('click', ()=> {
+  dropdown.classList.toggle('open');
 })
